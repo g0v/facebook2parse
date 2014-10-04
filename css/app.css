@@ -1,0 +1,82 @@
+body {
+	background: #BAD7F0;
+	background-size: 100%;
+}
+
+.know {
+	width: 100%;
+}
+
+.message img {
+	width: 100%;
+}
+
+.message {
+	position: relative;
+}
+.message .input-group{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	font-size: 20px;
+}
+
+.alert {
+	position: relative;
+	width: 100%;
+	max-width: 480px;
+	margin-left: 4px;
+	float: left;
+}
+
+.alert:nth-child(even) {
+	float: right;
+}
+
+.alert:before {
+	display: inline-block;
+	position: absolute;
+	top: -10%;
+	left: -16px;
+  width: 32px;
+  height: 32px;
+  background-image: url('../img/tent.png');
+  background-size: cover;
+  margin-top: 30px;
+  content:"";
+}
+
+.alert.count:before {
+	display: none;
+}
+
+@media screen and (min-width: 980px) {
+	.message .input-group{
+		margin-left: -200px;
+		margin-top: -80px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+	.message .input-group{
+		margin-left: -120px;
+		margin-top: -80px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.message .input-group{
+		width: 60%;
+		margin-left: -18%;
+		margin-top: -80px;
+	}
+}
+
+@media screen and (max-device-width: 480px) {
+	.message .input-group{
+		width: 60%;
+		margin-left: -70px;
+		margin-top: -80px;
+	}
+}
